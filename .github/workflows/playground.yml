@@ -28,7 +28,7 @@ jobs:
         run: npm ci
         working-directory: ./playground
       - name: Build
-        run: npm run build
+        run: npm run build -- --base /substrait-validator/
         working-directory: ./playground
       - name: Check
         run: npm run check
